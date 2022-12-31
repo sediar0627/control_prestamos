@@ -40,5 +40,13 @@
         @stack('modals')
 
         @livewireScripts
+
+        <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('js/sweet_alert2.min.js') }}"></script>
+        <script src="{{ asset('js/scripts/utils.js') }}"></script>
+
+        @if (isset($scripts))
+            {{ $scripts }}
+        @endif
     </body>
 </html>

@@ -17,5 +17,9 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+
+        <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('js/sweet_alert2.min.js') }}"></script>
+        <script src="{{ asset('js/scripts/utils.js') }}"></script>
     </body>
 </html>

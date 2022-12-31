@@ -16,7 +16,7 @@ class Expediente extends Model
         'folios',
     ];
 
-    public function prestamos(): HasOne
+    public function prestamo(): HasOne
     {
         return $this->hasOne(Prestamo::class, 'expediente_id');
     }
