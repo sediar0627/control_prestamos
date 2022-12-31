@@ -18,6 +18,10 @@ Route::get('/', function () {
     return to_route('dashboard');
 });
 
+Route::get('/register', function () {
+    return to_route('dashboard');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
